@@ -32,7 +32,7 @@ body:
         * Attach a file here
         * Include a media URL
         * Refer to a piece of media in the demo app (e.g. `Misc > Dizzy (MP4)`)
-        * If you don't want to post media publicly please email the info
+        * If you don't want to post media publicly please email the info |
           to dev.exoplayer@gmail.com with subject 'Issue #<issuenumber>' after 
           filing this issue, and note that here.
 
@@ -51,8 +51,8 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Devices that **do not** reproduce the issue
-      description: The devices you've tried but haven't observed the issue on
+      label: Devices that do not reproduce the issue
+      description: The devices you've tried but **haven't** observed the issue on
       placeholder: |
         Example:
         * Pixel 3 running Android Pie

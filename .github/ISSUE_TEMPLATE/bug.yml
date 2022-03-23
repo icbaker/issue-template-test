@@ -32,9 +32,7 @@ body:
         * Attach a file here
         * Include a media URL
         * Refer to a piece of media in the demo app (e.g. `Misc > Dizzy (MP4)`)
-        * If you don't want to post media publicly please email the info |
-          to dev.exoplayer@gmail.com with subject 'Issue #<issuenumber>' after 
-          filing this issue, and note that here.
+        * If you don't want to post media publicly please email the info to dev.exoplayer@gmail.com with subject 'Issue #\<issuenumber\>' after filing this issue, and note that here.
 
         For DRM-protected media please also include the scheme and license server URL.
     validations:
@@ -96,7 +94,5 @@ body:
     attributes:
       label: Bug report
       description: |
-        A bug report taken with `adb bugreport` shortly after reproducing the problem (ideally in the [demo app](https://exoplayer.dev/demo-application.html)). If you don't want
-        to post this publicly please write "I will email the bug report to dev.exoplayer@gmail.com
-        with subject 'Issue #<issuenumber>' after filing this issue"
+        A bug report taken with `adb bugreport` shortly after reproducing the problem (ideally in the [demo app](https://exoplayer.dev/demo-application.html)). If you don't want to post this publicly please write "I will email the bug report to dev.exoplayer@gmail.com with subject 'Issue #\<issuenumber\>' after filing this issue"
 

@@ -20,20 +20,21 @@ body:
       label: ExoPlayer Version
       description: What version of ExoPlayer are you using?
       options:
-        - label: 2.13.3
+        - 2.13.3
     validations:
       required: true
   - type: textarea
     attributes:
       label: Media
-      description: Media we can use to reproduce the problem
-      placeholder: |
+      description: |
+        Media we can use to reproduce the problem.
         Either:
         * Attach a file here
         * Include a media URL
         * Refer to a piece of media in the demo app (e.g. `Misc > Dizzy (MP4)`)
-        * If you don't want to post media publicly please write "I will email the media
-          to dev.exoplayer@gmail.com with subject 'Issue #<issuenumber>' after filing this issue")
+        * If you don't want to post media publicly please email the info
+          to dev.exoplayer@gmail.com with subject 'Issue #<issuenumber>' after 
+          filing this issue, and note that here.
 
         For DRM-protected media please also include the scheme and license server URL.
     validations:
@@ -43,6 +44,7 @@ body:
       label: Devices that reproduce the issue
       description: The devices you've observed the issue on
       placeholder: |
+        Example:
         * Pixel 4 running Android 12
         * Samsung S21 running Android 11
     validations:
@@ -52,6 +54,7 @@ body:
       label: Devices that **do not** reproduce the issue
       description: The devices you've tried but haven't observed the issue on
       placeholder: |
+        Example:
         * Pixel 3 running Android Pie
   - type: checkboxes
     attributes:
@@ -65,6 +68,7 @@ body:
       label: Reproduction steps
       description: Clear and complete steps we can use to reproduce the problem
       placeholder: |
+        Example:
         1. Play the attached media in the demo app
         2. Seek forward 10s
     validations:
@@ -74,6 +78,7 @@ body:
       label: Expected result
       description: What you expected to happen
       placeholder: |
+        Example:
         The media plays successfully
     validations:
       required: true
@@ -82,6 +87,7 @@ body:
       label: Actual result
       description: What you actually observed
       placeholder: |
+        Example:
         Playback crashes with the following stack trace:
         ...
     validations:
@@ -90,8 +96,7 @@ body:
     attributes:
       label: Bug report
       description: |
-        A bug report taken with `adb bugreport` shortly after reproducing the problem
-        (ideally in the [demo app](https://exoplayer.dev/demo-application.html)). If you don't want
+        A bug report taken with `adb bugreport` shortly after reproducing the problem (ideally in the [demo app](https://exoplayer.dev/demo-application.html)). If you don't want
         to post this publicly please write "I will email the bug report to dev.exoplayer@gmail.com
         with subject 'Issue #<issuenumber>' after filing this issue"
 

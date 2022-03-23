@@ -104,5 +104,5 @@ body:
       description: |
         Please attach the zip file produced by `adb bugreport` shortly after reproducing the problem (ideally in the [demo app](https://exoplayer.dev/demo-application.html)). If you don't want to post the bug report publicly please email it to dev.exoplayer@gmail.com with subject 'Issue #\<issuenumber\>' after filing this issue, and note that here.
         
-        **Note:** Just logcat output is **not** the same as a full bug report, and is often missing information that's useful for diagnosing issues. Please ensure you're providing a full bug report zip file.
+        **Note:** Logcat output is **not** the same as a full bug report, and is often missing information that's useful for diagnosing issues. Please ensure you're providing a full bug report zip file.
 

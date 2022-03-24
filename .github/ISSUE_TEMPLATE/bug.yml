@@ -34,20 +34,6 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Media
-      description: |
-        Media we can use to reproduce the problem.
-        Either:
-        * Attach a file here
-        * Include a media URL
-        * Refer to a piece of media from the demo app (e.g. `Misc > Dizzy (MP4)`)
-        * If you don't want to post media publicly please email the info to dev.exoplayer@gmail.com with subject 'Issue #\<issuenumber\>' after filing this issue, and note that here.
-
-        For DRM-protected media please also include the scheme and license server URL.
-    validations:
-      required: true
-  - type: textarea
-    attributes:
       label: Devices that reproduce the issue
       description: The devices you've observed the issue on
       placeholder: |
@@ -100,9 +86,26 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Bug report
+      label: Media
       description: |
-        Please attach the zip file produced by `adb bugreport` shortly after reproducing the problem (ideally in the [demo app](https://exoplayer.dev/demo-application.html)). If you don't want to post the bug report publicly please email it to dev.exoplayer@gmail.com with subject 'Issue #\<issuenumber\>' after filing this issue, and note that here.
-        
-        **Note:** Logcat output is **not** the same as a full bug report, and is often missing information that's useful for diagnosing issues. Please ensure you're providing a full bug report zip file.
+        Media we can use to reproduce the problem.
+        Either:
+        * Attach a file here
+        * Include a media URL
+        * Refer to a piece of media from the demo app (e.g. `Misc > Dizzy (MP4)`)
+        * If you don't want to post media publicly please email the info to dev.exoplayer@gmail.com with subject 'Issue #\<issuenumber\>' after filing this issue, and note that you will do this here.
 
+        For DRM-protected media please also include the scheme and license server URL.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        After filing this issue please run `adb bugreport` shortly after reproducing the problem (ideally in the [demo app](https://exoplayer.dev/demo-application.html)) to capture a zip file, and email this to dev.exoplayer@gmail.com with subject 'Issue #\<issuenumber\>'.
+        
+        **Note:** Logcat output is **not** the same as a full bug report, and is often missing information that's useful for diagnosing issues. Please ensure you're sending a full bug report zip file.
+  - type: checkboxes
+    attributes:
+      label: Bug report
+      options:
+        - label: You will email the zip file produced by `adb bugreport` to dev.exoplayer@gmail.com after filing this issue.

@@ -98,14 +98,12 @@ body:
         For DRM-protected media please also include the scheme and license server URL.
     validations:
       required: true
-  - type: markdown
+  - type: checkboxes
     attributes:
-      value: |
+      label: Bug Report
+      description: |
         After filing this issue please run `adb bugreport` shortly after reproducing the problem (ideally in the [demo app](https://exoplayer.dev/demo-application.html)) to capture a zip file, and email this to dev.exoplayer@gmail.com with subject 'Issue #\<issuenumber\>'.
         
         **Note:** Logcat output is **not** the same as a full bug report, and is often missing information that's useful for diagnosing issues. Please ensure you're sending a full bug report zip file.
-  - type: checkboxes
-    attributes:
-      label: Bug report
       options:
         - label: You will email the zip file produced by `adb bugreport` to dev.exoplayer@gmail.com after filing this issue.

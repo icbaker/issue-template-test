@@ -50,8 +50,8 @@ body:
     attributes:
       label: Reproducible in the [ExoPlayer demo app](https://exoplayer.dev/demo-application.html)?
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
         - Not tested
   - type: textarea
     attributes:

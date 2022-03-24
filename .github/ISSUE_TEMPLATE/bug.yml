@@ -53,6 +53,8 @@ body:
         - "Yes"
         - "No"
         - Not tested
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: Reproduction steps

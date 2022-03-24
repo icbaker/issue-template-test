@@ -48,7 +48,8 @@ body:
         * Pixel 3 running Android Pie
   - type: dropdown
     attributes:
-      label: Reproducible in the [ExoPlayer demo app](https://exoplayer.dev/demo-application.html)?
+      label: Reproducible in the demo app?
+      description: Please try and reproduce the issue in the [ExoPlayer demo app](https://exoplayer.dev/demo-application.html).
       options:
         - "Yes"
         - "No"
